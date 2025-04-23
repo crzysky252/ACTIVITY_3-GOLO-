@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="cran2.css" />
+</head>
+<body>
+  <form action="cran4.php" method="get">
+    <label>Please input 1st number: </label>
+    <input type="text" name="num1" id="num1" required />
+
+    <label>Please input 2nd number: </label>
+    <input type="text" name="num2" id="num2" required />
+
+    <label>Select Operation: </label>
+    <select name="operation" required>
+      <option value="add">Add</option>
+      <option value="subtract">Subtract</option>
+      <option value="multiply">Multiply</option>
+      <option value="divide">Divide</option>
+    </select>
+
+    <br /><br />
+    <input type="submit" value="Calculate" />
+  </form>
+
+  <?php include("calculator.php"); ?>
+
+  <!-- JavaScript file -->
+  <script src="cran3.js"></script>
+</body>
+</html>
